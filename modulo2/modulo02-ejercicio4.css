@@ -1,0 +1,33 @@
+body {
+	font-family: 'Indie Flower', cursive;
+}
+.caja {
+	background: linear-gradient(to bottom, #CFC, #FF9);
+	padding: 1em;
+}
+.caja .izq {
+	width: 50%;
+	background: #CFC;
+	float: left;
+	border-radius: 100px 0px 0px 100px;
+}
+.caja .dcha {
+	width: 50%;
+	background: red;
+	float: left;
+	border-radius: 0px 100px 100px 0px;
+
+}
+.clear {
+	clear: both;
+}
+.ejemplo5 >.imgPNG{
+	float: left;
+}
+.ejemplo5 >.imgSVG{
+	float: left;
+}
+.ejemplo6 {
+	width: 100%;
+    clear: left;
+}
