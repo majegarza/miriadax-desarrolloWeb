@@ -1,0 +1,40 @@
+<!DOCTYPE html><html>
+<head>
+  <title>Date</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1 id="h1"></h1>
+  <h1 id="h1_nombre"></h1>
+  <h2 id="h2">La fecha y la hora son:</h2>
+  <div id="fecha"></div>
+  <div id="modulo3" style="background: green">
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+  </div>
+
+ <script type="text/javascript">
+  var fecha = new Date();
+  var msj;
+  var nombre="Manuel Jesús García Zafra";
+
+  if      (fecha.getHours() < 7)  { msj = "Buenas noches";}
+  else if (fecha.getHours() < 12) { msj = "Buenos días";}
+  else if (fecha.getHours() < 21) { msj = "Buenas tardes";}
+  else                                          { msj = "Buenas noches";}
+
+  document.getElementById("h1").innerHTML    = msj;
+  document.getElementById("fecha").innerHTML = fecha;
+  document.getElementById("h1_nombre").innerHTML    = nombre;
+
+  document.getElementById("p1").innerHTML = document.getElementById("h2").innerHTML;
+  document.getElementById("p2").innerHTML = document.getElementById("h1").outerHTML;
+  document.getElementById("p3").innerHTML = location.href;
+  document.getElementById("p4").innerHTML = location;
+  document.getElementById("p5").innerHTML = screen.width + " * " + screen.height;
+</script>
+</body>
+</html>
